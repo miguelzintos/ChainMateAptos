@@ -1,0 +1,22 @@
+[package]
+name = "ChainMate"
+version = "1.0.0"
+authors = []
+
+[addresses]
+chainmate = "0xd16e1a31b9f8ef09dcdf8f9b7c792cecff1dc1421e54d773ef010b3be4de7501"
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+aptos_token_objects = "0x4"
+aptos_token = "0x3"
+
+[dev-addresses]
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-framework", rev = "randomnet"}
+MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/move-stdlib", rev = "randomnet"}
+AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token/", rev="randomnet" }
+AptosTokenObjects = { git = "https://github.com/aptos-labs/aptos-core.git", subdir="aptos-move/framework/aptos-token-objects/", rev="randomnet" }
+
+[dev-dependencies]
